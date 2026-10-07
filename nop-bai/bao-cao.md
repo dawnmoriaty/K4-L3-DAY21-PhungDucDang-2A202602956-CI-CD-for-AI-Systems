@@ -48,3 +48,9 @@ Tập dữ liệu Adult có phân bố lớp mất cân bằng lớn khi lớp d
 | Bước 3 (thêm `train_batch2`) | 0.7354 | 0.8820 |
 
 **Nhận xét:** Khi nạp thêm 22.361 mẫu (`train_batch2`), cả F1-score và Accuracy đều tăng nhẹ (F1 tăng từ 0.7149 lên 0.7354, Accuracy từ 0.8740 lên 0.8820). Quy mô dữ liệu 44.722 mẫu giúp mô hình tinh chỉnh ranh giới phân loại lớp thiểu số tốt hơn. Quan trọng nhất, quy trình Continuous Training đã chạy hoàn toàn tự động: chỉ cần commit dữ liệu mới, pipeline tự động kéo dữ liệu, huấn luyện, vượt qua Quality Gate và deploy lên server mà không cần can thiệp thủ công.
+
+---
+
+## 5. Phần Bonus Đã Thực Hiện (nếu có)
+
+- [x] Bonus 1 - Tracking MLflow từ xa với DagsHub: Kết nối MLflow đến server DagsHub qua HTTPS token và ghi nhận log các thí nghiệm CI/CD.
