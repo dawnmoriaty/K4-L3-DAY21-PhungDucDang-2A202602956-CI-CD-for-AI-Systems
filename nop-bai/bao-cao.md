@@ -54,3 +54,7 @@ Tập dữ liệu Adult có phân bố lớp mất cân bằng lớn khi lớp d
 ## 5. Phần Bonus Đã Thực Hiện (nếu có)
 
 - [x] Bonus 1 - Tracking MLflow từ xa với DagsHub: Kết nối MLflow đến server DagsHub qua HTTPS token và ghi nhận log các thí nghiệm CI/CD.
+- [x] Bonus 2 - Điều chỉnh ngưỡng quyết định: Quét ngưỡng xác suất từ 0.1 đến 0.9, tìm ra ngưỡng tối ưu nâng F1-score và log vào report/MLflow.
+- [x] Bonus 3 - Báo cáo precision / recall tự động: Tạo ma trận nhầm lẫn và classification report chi tiết cho từng lớp vào outputs/detail.txt.
+- [x] Bonus 4 - Hoàn trả về phiên bản trước: Xây dựng Rollback Gate so sánh F1 mới với F1 cũ trên S3, chỉ release khi F1 mới >= F1 cũ.
+- [x] Bonus 5 - Cảnh báo lệch lạc dữ liệu: Tự động kiểm tra tỷ lệ lớp dương tập train so với mốc 24.8% và cảnh báo nếu độ lệch > 5%.
